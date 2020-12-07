@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* 
+기본pc => 태블릿 => 모바일
+*/
+#wrap {
+  min-width: 20rem; }
+
+/* 320px => ? rem */
+.header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(40, 30, 19, 0.15);
+  color: #ffffff;
+  font-family: scDream; }
+  .header .logo {
+    float: left; }
+    .header .logo a {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      display: block;
+      background: url("../images/common/hill_logo_white.svg") no-repeat; }
+
+#pcHeader {
+  height: 31.25vw;
+  padding: 0 7.8125vw; }
+  #pcHeader .logo {
+    padding-top: 15px; }
+    #pcHeader .logo a {
+      width: 4.6875vw;
+      height: 3.90625vw; }
+
+#pcHeader.on {
+  border: 1px solid #000;
+  color: #956e4be6; }
+  #pcHeader.on .logo a {
+    background-image: url("../images/common/hill_logo_red.svg"); }
+  #pcHeader.on .calendar {
+    background-image: url("../images/common/hd_calendar_dark.svg"); }
+  #pcHeader.on .login {
+    background-image: url("../images/common/hd_login_dark.svg"); }
+
+#pcGnb {
+  display: inline-block;
+  margin-left: 6.7708vw;
+  padding-top: 2.083333333vw; }
+  #pcGnb > div {
+    width: 59.895833333vw; }
+  #pcGnb li {
+    text-align: center;
+    width: 7.8125vw; }
+  #pcGnb .dep1 > li {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block; }
+    #pcGnb .dep1 > li a {
+      display: block; }
+    #pcGnb .dep1 > li + li {
+      margin-left: 4.166666667vw; }
+  #pcGnb .dep1 a:hover, #pcGnb .dep1 a:focus {
+    color: #956e4be6; }
+  #pcGnb .dep1 .dep2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    font-weight: 400;
+    color: #281E13; }
+    #pcGnb .dep1 .dep2 > li {
+      display: flex;
+      justify-content: center; }
+      #pcGnb .dep1 .dep2 > li a {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: fit-content; }
+        #pcGnb .dep1 .dep2 > li a::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background: #956e4be6; }
+        #pcGnb .dep1 .dep2 > li a:hover::after, #pcGnb .dep1 .dep2 > li a:focus::after {
+          -webkit-transition: width 0.5s;
+          -moz-transition: width 0.5s;
+          -o-transition: width 0.5s;
+          transition: width 0.5s;
+          width: 100%; }
+      #pcGnb .dep1 .dep2 > li + li {
+        margin-top: 2.604166667vw; }
+
+.util {
+  position: absolute;
+  top: 0;
+  right: 7.8125vw;
+  width: 7.8125vw;
+  padding-top: 1.5625vw; }
+  .util li {
+    display: inline-block;
+    width: 100%; }
+    .util li a {
+      display: block;
+      width: 1.5625vw;
+      height: 1.5625vw; }
+    .util li + li {
+      margin-left: 2.6042vw; }
+  .util .calendar a {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important;
+    background-image: url("../images/common/hd_calendar_white.svg"); }
+  .util .login a {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important;
+    background-image: url("../images/common/hd_login_white.svg"); }
+
+#mHeader {
+  display: none; }
+
+/*# sourceMappingURL=layout.css.map */

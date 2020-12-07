@@ -1,0 +1,120 @@
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../../../font/NanumSquareL.eot");
+  src: url("../../../font/NanumSquareL.eot#iefix") format("embedded-opentype"), url("../../../font/NanumSquareL.woff2") format("woff2"), url("../../../font/NanumSquareL.woff") format("woff"), url("../../../font/NanumSquareL.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/NanumSquareR.eot");
+  src: url("../../../font/NanumSquareR.eot#iefix") format("embedded-opentype"), url("../../../font/NanumSquareR.woff2") format("woff2"), url("../../../font/NanumSquareR.woff") format("woff"), url("../../../font/NanumSquareR.ttf") format("truetype"); }
+@font-face {
+  font-family: NanumSquare;
+  font-weight: 600;
+  font-style: normal;
+  src: url("../../../font/NanumSquareB.eot");
+  src: url("../../../font/NanumSquareB.eot#iefix") format("embedded-opentype"), url("../../../font/NanumSquareB.woff2") format("woff2"), url("../../../font/NanumSquareB.woff") format("woff"), url("../../../font/NanumSquareB.ttf") format("truetype"); }
+@font-face {
+  font-family: scDream;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../../font/S-CoreDream-4Regular.eot");
+  src: url("../../../font/S-CoreDream-4Regular.eot#iefix") format("embedded-opentype"), url("../../../font/S-CoreDream-4Regular.woff2") format("woff2"), url("../../../font/S-CoreDream-4Regular.woff") format("woff"), url("../../../font/S-CoreDream-4Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: scDream;
+  font-weight: 500;
+  font-style: normal;
+  src: url("../../../font/S-CoreDream-5Medium.eot");
+  src: url("../../../font/S-CoreDream-5Medium.eot#iefix") format("embedded-opentype"), url("../../../font/S-CoreDream-5Medium.woff2") format("woff2"), url("../../../font/S-CoreDream-5Medium.woff") format("woff"), url("../../../font/S-CoreDream-5Medium.ttf") format("truetype"); }
+body, h1, h2, h3, h4, p, ul, button, form {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4 {
+  font-size: 100%; }
+
+ul {
+  list-style: none; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+img, figure, video {
+  max-width: 100%; }
+
+address {
+  font-style: normal; }
+
+header, nav, section, footer {
+  display: block; }
+
+.f_l {
+  float: left; }
+
+.f_r {
+  float: right; }
+
+.p_r {
+  position: relative; }
+
+.p_a {
+  position: absolute; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.blind-b {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  border: none;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%); }
+
+#skip a {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 1000; }
+  #skip a:focus {
+    left: 0;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600; }
+
+body {
+  font-family: NanumSquare, scDream;
+  font-size: 1.0417vw;
+  color: #281E13;
+  line-height: 1;
+  font-weight: 400; }
+  body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=common.css.map */
