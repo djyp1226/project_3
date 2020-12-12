@@ -28,11 +28,11 @@
   font-style: normal;
   src: url("../../../font/S-CoreDream-5Medium.eot");
   src: url("../../../font/S-CoreDream-5Medium.eot#iefix") format("embedded-opentype"), url("../../../font/S-CoreDream-5Medium.woff2") format("woff2"), url("../../../font/S-CoreDream-5Medium.woff") format("woff"), url("../../../font/S-CoreDream-5Medium.ttf") format("truetype"); }
-body, h1, h2, h3, h4, p, ul, button, form {
+body, h1, h2, h3, h4, h5, p, ul, button, form {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-size: 100%; }
 
 ul {
@@ -63,7 +63,7 @@ img, figure, video {
 address {
   font-style: normal; }
 
-header, nav, section, footer {
+header, nav, section, aside, footer {
   display: block; }
 
 .f_l {

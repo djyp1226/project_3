@@ -53,8 +53,8 @@
 }
 
 // tag reset
-body, h1, h2, h3, h4, p, ul, button, form{margin: 0;padding: 0;}
-h1, h2, h3, h4{font-size: 100%;}
+body, h1, h2, h3, h4, h5, p, ul, button, form{margin: 0;padding: 0;}
+h1, h2, h3, h4, h5{font-size: 100%;}
 ul{list-style: none;}
 a:link, a:visited, a:hover, a:active{text-decoration: none;color: inherit;}
 button{border: none;background: none;cursor: pointer;}
@@ -62,7 +62,7 @@ button{font-family: inherit;font-size: inherit;color: inherit;line-height: inher
 img{border: none;vertical-align: top;}
 img, figure, video{max-width: 100%;}
 address{font-style: normal;}
-header, nav, section, footer{display: block;}
+header, nav, section, aside, footer{display: block;}
 
 // common class
 .f_l{float: left;}
