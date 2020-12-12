@@ -819,15 +819,17 @@
         #cnt3 .hillstory .storybox a div img {
           width: 25px;
           height: 25px; }
-    #cnt3 #cnt4 .pc_menu3 {
-      display: none; }
-    #cnt3 #cnt4 .m_menu3 {
-      display: block; }
-      #cnt3 #cnt4 .m_menu3 .swiper-wrapper {
-        height: 700px; }
-    #cnt3 #banner {
-      display: none; } }
-@media screen and (max-width: 1080px) and (max-width: 770px) {
+
+  #cnt4 .pc_menu3 {
+    display: none; }
+  #cnt4 .m_menu3 {
+    display: block; }
+    #cnt4 .m_menu3 .swiper-wrapper {
+      height: 700px; }
+
+  #banner {
+    display: none; } }
+@media screen and (max-width: 770px) {
   #cnt_wrap {
     position: relative; }
 
