@@ -7,7 +7,7 @@ $(document).ready(function() {
     //사이즈에 변화가 생길때 마다 pc/mobile 버전을 체크하여 body.pc / body.mobile 이라고 함
     $(window).on('resize', function () {
       var winWidth = $(window).width();
-      if (winWidth > 770) {  //pc일 경우
+      if (winWidth > 767) {  //pc일 경우
         $('#acco_box').removeClass('mobile').addClass('pc');
         //다른 버전에서 스크립트를 통해 스타일을 적용시킨 것을 초기화 한다
         _acco.find('.accopanel').removeAttr('style');
