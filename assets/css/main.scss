@@ -8,12 +8,10 @@
 // #cnt1
 #cnt1{ 
     // display: none;
-    padding-bottom: 56.25%; overflow: hidden;
-    .main_video{display: block; position: absolute;top: 0;left: 0;width:100%;height: 100%;
-        #videoBg{width: 100%;}
-        #t_videoBg{display: none;}
-        #m_videoBg{display: none;}
-    }
+    .main_video{position: relative;}
+    #videoBg{width: 100%;}
+    #t_videoBg{display: none;}
+    #m_videoBg{display: none;}
 }
 
 // #cnt2
@@ -313,12 +311,15 @@
 
 @media screen and (max-width: 1439px) {
     #cnt1{
-        height: 100vh;
         .main_video{
+            height: 100vh;overflow: hidden;
+            *{
+                @include transform(translate(-50%, -50%));
+                position: absolute;top: 50%;left: 50%;}
+            }
         #videoBg{display: none;}
         #t_videoBg{display: block; width: 100%;}
         #m_videoBg{display: none;}
-    }
     }
     #cnt2{ 
         margin-top: 30px;
@@ -425,8 +426,8 @@
 @media screen and (max-width: 767px) {
     #cnt_wrap{position: relative;}
     #cnt1{   
-        height: 100vh;    
         .main_video{
+            height: 100vh; overflow: hidden;
         #videoBg{display: none;}
         #t_videoBg{display: none;}
         #m_videoBg{display: block; width: 100%;}
@@ -439,20 +440,20 @@
         .left{
             display: block; margin: 0;
         .checklist{
-            margin-top: 50px;
-            h5{padding-left: 50px; padding-top: 8px;}
+            margin-top: 20px;
+            h5{padding-left: 50px; padding-top: 13px; font-size: 16px;}
             a{display: block; width:100%; height: 100px;
-                img{width: 20px;height: 25px; margin-left: 55px;}
+                img{width: 20px;height: 25px; margin-left: 45px; margin-top: 8px;}
             }
-            &::after{width: 260px; bottom: 55px; left:calc(50% - 130px);}
+            &::after{width: 260px; bottom: 155px; left:calc(50% - 130px);}
         }
 
         .notice{
-            width: 100%; height: 200px; padding: 25px 30px 0 30px; margin-top: 50px;
-            a{ position: relative;
-                h5{font-size: 17px; padding-left: 30px; padding-bottom: 10px;}
-                img{width: 20px;height: 25px; margin-left: 160px; margin-top: -7px;}
-                &::after{ margin: 0; width: 270px; bottom: -20px; left:13px; position: absolute;}
+            width: 100%; height: 200px; padding: 25px 30px 0 30px; margin-top: -50px;
+            a{ position: relative; margin: 0;
+                h5{font-size: 17px; padding-left: 30px; padding-top: 10px;}
+                img{width: 20px;height: 25px; margin-left: 160px; margin-top: 5px;}
+                &::after{ margin: 0; width: 270px; bottom: -10px; left:13px; position: absolute;}
             }
             ul{ padding: 35px 0 0 15px;
                 li{font-size: 10px;
@@ -474,7 +475,7 @@
         }
         }
         .hillstory{
-            height: 200px;
+            height: 200px; margin-top: 50px;
             .storybox{
                 a{
                 strong{font-size: 18px; letter-spacing: 5px; line-height: 50px; padding-top: 35px;}
@@ -484,12 +485,22 @@
             }
         }
     }
+}
     #cnt4{
         .pc_menu3{display: none;}
         .m_menu3{display: block; 
             .swiper-wrapper{height: 500px;}
+            .swiper-slide {
+                strong{font-size: 20px; height: 180px;
+                line-height: 180px;
+            &::after{bottom: 35px;}
+            }
+                ul li{
+                    +li{margin-top: 40px;}
+                    a{font-size: 18px;}
+                }
+                }
         }
     }
     #banner{position: absolute; bottom: 0;left: 0;}
-}
 }
