@@ -25,6 +25,7 @@ $(document).ready(function() {
   
     //1) 로딩 설정
     $('#acco_box').addClass('bg1').find('.complex:first').addClass('on').next().show().attr('tabIndex', 0);
+    $('.accopanel').addClass('bg1').find('.complex:first').addClass('on').next().show().attr('tabIndex', 0);
     $('#acco_box').find('.complex:first .accoheader').attr({'aria-expanded': true, 'aria-disabled': true}).parent().siblings('.complex').children().attr('aria-expanded', false);
   
     //pc일 경우만 가로 크기를 0에서 지정한 사이즈로 넓혀 준다
@@ -76,6 +77,12 @@ $(document).ready(function() {
         } else {
           $(this).parent().next().stop().slideDown('slow').attr('tabIndex', 0).siblings('.accopanel').stop().slideUp('slow').attr('tabIndex', -1);
         }
+      }
+      //모바일
+      if ( !$(this).parent().siblings('.accopanel').hasClass('on') ) {
+        $('.accopanel').removeClass('bg1 bg2 bg3 bg4').addClass( $(this).data('bg'));
+
+        $(this).attr({'aria-expanded': true, 'aria-disabled': true}).parent().addClass('on').siblings('.complex.on').removeClass('on').children().attr('aria-expanded', false).removeAttr('aria-disabled');
       }
     });
 

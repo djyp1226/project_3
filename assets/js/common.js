@@ -1,8 +1,8 @@
 $(document).ready(function () {
   var _pcGnb = $('#pcGnb  > ul');
   var _dep2Ul= _pcGnb.find('li ul');	//gnb : depth2 ul
-  var _mGnb = $('#mHeader .mgnb_wrap');
-  var _m_dep1 = _mGnb.find('.m_menu > ul');
+  var m_gnb = $('#mHeader .mgnb_wrap');
+  var m_dep1 = $('#mHeader> .mgnb_wrap > .m_menu > ul');
 
     //네비게이션
     // $(window).on('resize', function () {
@@ -64,46 +64,49 @@ $(document).ready(function () {
     //   else $('#mHeader').removeClass('on');
     // });
 
-    //모바일 네비게이션
-    _mGnb.find('.dep2').hide();
+    //포커스
     $('#mHeader .on_top button').on('click', function () {
       //모바일 on off
-      $(this).parent().parent().toggleClass('on');  //#mHeader.on
-      if ($(this).hasClass('on')) { //열려진 경우라면
-        _mGnb.stop().animate({left: '-100%'}, 300, function () {
-            $(this).css({visibility: 'hidden'}).find('.dep1 > li.on').removeClass('on').children('.dep2').hide();
+      $(this).parent().parent().toggleClass('on');
+      if ($(this).hasClass('on')) {
+        m_gnb.stop().animate({left: '-100%'}, 300, function () {
+            $(this).css({display: 'none'}).find('ul li.on').removeClass('on').children('ul').stop().slideup();
         });
-        $(this).removeClass('on').children('.blind-b').text('메뉴 열기');
-    } else {  //닫겨진 경우라면
-        $(this).addClass('on').children('.blind-b').text('메뉴 닫기');
-        var _first = _mGnb.find('.mgnb_wrap .first');
-        var _last = _mGnb.find('.mgnb_wrap .last');
+        $(this).removeClass('on').children().find('.blind-b').text('메뉴 열기');
+        $('.logo').css({display:'none'});
+    } else {
+        $(this).addClass('on').children().find('.blind-b').text('메뉴 닫기');
+        var $first = _pcGnb.find('[data-link="first"]');
+        var $last = _pcGnb.find('[data-link="last"]');
   
-        _mGnb.css({visibility: 'visible'}).stop().animate({left: 0}, 300, function () {
-          _first.focus(); //대상 엘리먼트에 포커스를 강제로 이동
+        m_gnb.css({display: 'block'}).stop().animate({left: 0}, 300, function () {
+        _first.focus(); //대상 엘리먼트에 포커스를 강제로 이동
         });
     }
 
-    _m_dep1.find('>li>a').on('click', function () {
+    m_gnb.find('.dep2').hide();
+
+    m_dep1.find('>li>a').on('click', function () {
       if ($(this).next().size() === 0) {	//depth1 <a>만 있는 경우
         location.href=$(this).attr("href");
       }else {								//depth2 <ul>도 있는 경우
         //초기화 : 미리 열려진 컨텐츠 처음으로 되돌리기
-        $(this).parent().siblings().removeClass('on').find('ul').stop().slideUp(600);
-        $(this).next().stop().slideToggle(600).parent().toggleClass('on');
+        $(this).parent().siblings().removeClass('on').find('ul').stop().slideUp("600");
+
+        $(this).next().stop().slideToggle("600").parent().toggleClass('on');
       }
       return false;
     });
 
-    // _m_dep1.find('> li > a').on('click', function (e) {
+    // m_dep1.find('> li > a').on('click', function (e) {
     //   e.preventDefault ();
-    //   if(!$('_m_dep1>li').hasClass('on')) {
-    //     if($('_m_dep1>li').next().hasClass('dep2')) {
-    //      _m_dep1.find('>li.on').removeClass('on').children('ul').stop().slideUp('fast');
-    //      _m_dep1.find('.dep2 > li.on').removeClass('on').children('ul').stop().slideUp('fast');
+    //   if(!$('m_dep1>li').hasClass('on')) {
+    //     if($('m_dep1>li').next().hasClass('dep2')) {
+    //      m_dep1.find('>li.on').removeClass('on').children('ul').stop().slideUp('fast');
+    //      m_dep1.find('.dep2 > li.on').removeClass('on').children('ul').stop().slideUp('fast');
     //     }
     //     else{
-    //      _m_dep1.find('.dep2 > li.on').removeClass('on').parent('ul').stop().slideUp('fast');
+    //      m_dep1.find('.dep2 > li.on').removeClass('on').parent('ul').stop().slideUp('fast');
     //     }
     //     $(this).next().stop().slideDown('fast').parent().addClass('on');
     //   }
@@ -112,8 +115,8 @@ $(document).ready(function () {
     //   }
     // });
 
-    var _first = _mGnb.find('.first');
-    var _last =  _mGnb.find('.last');
+    var _first = m_gnb.find('.first');
+    var _last =  m_gnb.find('.last');
     _first.on('keydown', function (e) {
       // console.log(e.keyCode); tab키
       if ( e.shiftKey && e.keyCode === 9) {
@@ -127,20 +130,5 @@ $(document).ready(function () {
         _first.focus();
       }
     });
-  });
-  
-      //fade 
-      var timer = 0;
-      var scrollT = $(this).scrollTop();
-  
-      $(window).on('scroll', function () {
-          clearTimeout(timer);
-          timer = setTimeout(function () {
-            scrollT = $(this).scrollTop();
-         
-            $('.fade').each(function () {
-              if (scrollT > $(this).offset().top - 300) $(this).addClass('on');
-            });
-            });
-            });
+});
 });

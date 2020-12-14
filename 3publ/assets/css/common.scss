@@ -82,3 +82,20 @@ header, nav, section, aside, footer{display: block;}
 body{font-family: NanumSquare, scDream; font-size: 1.0417vw; color: $dark_brown; line-height: 1; font-weight: 400;
     *{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 }
+
+//fade
+.fade{
+    @include transition(all 1s);
+    opacity: 0;
+    // 수직은 translateY => 기준 아래는 +, 기준 위는 -
+    &.up{@include transform(translateY(11.1111vw));}
+    &.down{@include transform(translateY(-11.1111vw));}
+    // 수평은 translateX => 기준 오른쪽 +, 기준 왼쪽 -
+    &.left{@include transform(translateX(11.1111vw));}
+    &.right{@include transform(translateX(-11.1111vw));}
+  }
+  .fade.on{
+    opacity: 1;
+    &.up, &.down{@include transform(translateY(0px));}
+    &.left, &.right{@include transform(translateX(0px));}
+  }
