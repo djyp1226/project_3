@@ -218,7 +218,7 @@
         // display: none;
         width: 100%; position: relative;
         &::before{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; }
-            &::after{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; }
+        &::after{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; }
         
 
     .menu3{
@@ -455,6 +455,7 @@
     }
     #cnt4{ margin-bottom: 0;
         .pc_menu3{display: none;}
+        .pc_menu3.red_line{display: none;}
         .m_menu3{display: block;
             .swiper-wrapper{height: 700px;}
             .swiper-slide {
@@ -556,6 +557,7 @@
     #cnt4{
         margin-bottom: 0;
         .pc_menu3{display: none;}
+        .pc_menu3.red_line{ display: none;}
         .m_menu3{display: block; 
             .swiper-wrapper{height: 500px;}
             .swiper-slide {
