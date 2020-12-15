@@ -122,6 +122,8 @@
 
 #mHeader {
   display: none; }
+  #mHeader.on a {
+    background-image: none; }
 
 #footer {
   width: 100%;
@@ -286,8 +288,7 @@
         text-align: center;
         padding: 5.5556vw 0; }
         #mHeader .mgnb_wrap .m_calender a {
-          display: block;
-          line-height: normal; }
+          display: block; }
       #mHeader .mgnb_wrap .dep1 {
         padding-top: 8.3333vw;
         padding-left: 9.722222222vw;
