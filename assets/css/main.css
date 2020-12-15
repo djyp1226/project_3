@@ -208,16 +208,16 @@
   margin-top: 5.2083vw;
   background: rgba(244, 235, 220, 0.1);
   position: relative; }
-  #cnt3 .left {
+  #cnt3 .on_left {
     margin: 0 0 5.2083vw 13.0208vw;
     display: inline-block; }
-    #cnt3 .left h5 {
+    #cnt3 .on_left h5 {
       display: inline-block; }
-    #cnt3 .left .checklist {
+    #cnt3 .on_left .checklist {
       padding-top: 60px;
       font-weight: 400;
       position: relative; }
-      #cnt3 .left .checklist a {
+      #cnt3 .on_left .checklist a {
         display: inline-block;
         font-size: 30px;
         padding-left: 65px;
@@ -225,18 +225,18 @@
         width: 600px;
         background: rgba(244, 235, 220, 0.4);
         padding-top: 60px; }
-        #cnt3 .left .checklist a img {
+        #cnt3 .on_left .checklist a img {
           display: inline-block;
           width: 200px;
           height: 30px; }
-        #cnt3 .left .checklist a:hover, #cnt3 .left .checklist a:focus {
+        #cnt3 .on_left .checklist a:hover, #cnt3 .on_left .checklist a:focus {
           background: rgba(131, 89, 52, 0.4);
           color: #fff;
           -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -o-transition: all 0.3s;
           transition: all 0.3s; }
-      #cnt3 .left .checklist::after {
+      #cnt3 .on_left .checklist::after {
         content: "";
         display: block;
         width: 500px;
@@ -245,7 +245,7 @@
         position: absolute;
         bottom: 100px;
         left: 50px; }
-    #cnt3 .left .notice {
+    #cnt3 .on_left .notice {
       height: 400px;
       width: 600px;
       margin-top: 50px;
@@ -254,20 +254,20 @@
       -webkit-background-size: cover !important;
       -moz-background-size: cover !important;
       background-size: cover !important; }
-      #cnt3 .left .notice > a {
+      #cnt3 .on_left .notice > a {
         position: relative; }
-        #cnt3 .left .notice > a h5 {
+        #cnt3 .on_left .notice > a h5 {
           font-size: 35px;
           padding-left: 70px;
           letter-spacing: 5px; }
-        #cnt3 .left .notice > a img {
+        #cnt3 .on_left .notice > a img {
           display: block;
           width: 45px;
           height: 30px;
           position: absolute;
           top: -5px;
           left: 480px; }
-        #cnt3 .left .notice > a::after {
+        #cnt3 .on_left .notice > a::after {
           content: "";
           display: block;
           width: 500px;
@@ -275,27 +275,27 @@
           background-color: #956e4b;
           margin-left: 50px;
           margin-top: 15px; }
-      #cnt3 .left .notice ul {
+      #cnt3 .on_left .notice ul {
         float: left;
         padding: 50px 60px;
         font-size: 17px; }
-      #cnt3 .left .notice li a {
+      #cnt3 .on_left .notice li a {
         display: block; }
-        #cnt3 .left .notice li a:hover, #cnt3 .left .notice li a:focus {
+        #cnt3 .on_left .notice li a:hover, #cnt3 .on_left .notice li a:focus {
           font-weight: 600; }
-      #cnt3 .left .notice li + li {
+      #cnt3 .on_left .notice li + li {
         margin-top: 45px; }
-  #cnt3 .left {
+  #cnt3 .on_left {
     margin: 0 0 5.2083vw 13.0208vw;
     display: inline-block;
     position: relative; }
-    #cnt3 .left h5 {
+    #cnt3 .on_left h5 {
       display: inline-block; }
-    #cnt3 .left .checklist {
+    #cnt3 .on_left .checklist {
       padding-top: 3.1250vw;
       font-weight: 400;
       position: relative; }
-      #cnt3 .left .checklist a {
+      #cnt3 .on_left .checklist a {
         display: inline-block;
         font-size: 1.5625vw;
         padding-left: 3.3854vw;
@@ -303,17 +303,17 @@
         width: 31.2500vw;
         background: rgba(244, 235, 220, 0.4);
         padding-top: 3.1250vw; }
-        #cnt3 .left .checklist a img {
+        #cnt3 .on_left .checklist a img {
           display: inline-block;
           width: 10.4167vw;
           height: 1.5625vw; }
-        #cnt3 .left .checklist a:hover, #cnt3 .left .checklist a:focus {
+        #cnt3 .on_left .checklist a:hover, #cnt3 .on_left .checklist a:focus {
           background: rgba(131, 89, 52, 0.4);
           -webkit-transition: all 0.3s;
           -moz-transition: all 0.3s;
           -o-transition: all 0.3s;
           transition: all 0.3s; }
-      #cnt3 .left .checklist::after {
+      #cnt3 .on_left .checklist::after {
         content: "";
         display: block;
         width: 26.0417vw;
@@ -322,7 +322,7 @@
         position: absolute;
         bottom: 5.2083vw;
         left: 2.6042vw; }
-    #cnt3 .left .notice {
+    #cnt3 .on_left .notice {
       height: 20.8333vw;
       width: 31.2500vw;
       margin-top: 2.6042vw;
@@ -331,19 +331,19 @@
       -webkit-background-size: cover !important;
       -moz-background-size: cover !important;
       background-size: cover !important; }
-      #cnt3 .left .notice > a {
+      #cnt3 .on_left .notice > a {
         position: relative; }
-        #cnt3 .left .notice > a h5 {
+        #cnt3 .on_left .notice > a h5 {
           font-size: 1.8229vw;
           padding-left: 3.6458vw;
           letter-spacing: 0.2604vw; }
-        #cnt3 .left .notice > a img {
+        #cnt3 .on_left .notice > a img {
           display: block;
           width: 2.3438vw;
           height: 1.5625vw;
           top: -0.2604vw;
           left: 25.0000vw; }
-        #cnt3 .left .notice > a::after {
+        #cnt3 .on_left .notice > a::after {
           content: "";
           display: block;
           width: 26.0417vw;
@@ -351,17 +351,17 @@
           background-color: #956e4b;
           margin-left: 2.6042vw;
           margin-top: 0.7813vw; }
-      #cnt3 .left .notice ul {
+      #cnt3 .on_left .notice ul {
         float: left;
         padding: 2.6042vw 3.1250vw;
         font-size: 0.8854vw; }
-      #cnt3 .left .notice li {
+      #cnt3 .on_left .notice li {
         white-space: nowrap; }
-        #cnt3 .left .notice li a {
+        #cnt3 .on_left .notice li a {
           display: block; }
-          #cnt3 .left .notice li a:hover, #cnt3 .left .notice li a:focus {
+          #cnt3 .on_left .notice li a:hover, #cnt3 .on_left .notice li a:focus {
             font-weight: 600; }
-        #cnt3 .left .notice li + li {
+        #cnt3 .on_left .notice li + li {
           margin-top: 2.3438vw; }
   #cnt3 .magazine {
     width: 36.4583vw;
@@ -472,44 +472,29 @@
           transition: all 0.1s; }
 
 #cnt4 {
-  margin-top: 10.4167vw; }
+  margin-top: 10.4167vw;
+  margin-bottom: 300px; }
   #cnt4 .pc_menu3 {
     width: 100%;
     position: relative; }
-    #cnt4 .pc_menu3 .red_line {
-      width: 100%;
-      height: 100%; }
-      #cnt4 .pc_menu3 .red_line::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        height: 0.0521vw;
-        background: #821E1E;
-        top: 16.6667vw;
-        left: 50%;
-        width: 0%; }
-      #cnt4 .pc_menu3 .red_line:hover::before {
-        left: 11%;
-        width: 40%;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s; }
-      #cnt4 .pc_menu3 .red_line::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        height: 0.0521vw;
-        background: #821E1E;
-        top: 16.6667vw;
-        left: 50%;
-        width: 0%; }
-      #cnt4 .pc_menu3 .red_line:hover::after {
-        width: 40%;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s; }
+    #cnt4 .pc_menu3::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 0.0521vw;
+      background: #821E1E;
+      top: 16.6667vw;
+      left: 50%;
+      width: 0%; }
+    #cnt4 .pc_menu3::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 0.0521vw;
+      background: #821E1E;
+      top: 16.6667vw;
+      left: 50%;
+      width: 0%; }
     #cnt4 .pc_menu3 .menu3 {
       width: 100%;
       height: 46.8750vw;
@@ -565,6 +550,23 @@
         font-size: 1.4583vw; }
         #cnt4 .pc_menu3 .menu3 li a:hover, #cnt4 .pc_menu3 .menu3 li a:focus {
           font-weight: 600; }
+  #cnt4 .pc_menu3.red_line {
+    width: 100%;
+    height: 100%;
+    display: block; }
+    #cnt4 .pc_menu3.red_line::before {
+      left: 11%;
+      width: 40%;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -o-transition: all 0.8s;
+      transition: all 0.8s; }
+    #cnt4 .pc_menu3.red_line::after {
+      width: 40%;
+      -webkit-transition: all 0.7s;
+      -moz-transition: all 0.7s;
+      -o-transition: all 0.7s;
+      transition: all 0.7s; }
   #cnt4 .m_menu3 {
     display: none; }
     #cnt4 .m_menu3 .swiper-container {
@@ -878,58 +880,58 @@
   #cnt3 {
     margin-top: 30px;
     overflow: hidden; }
-    #cnt3 .left {
+    #cnt3 .on_left {
       display: block;
       margin: 0; }
-      #cnt3 .left .checklist {
+      #cnt3 .on_left .checklist {
         height: 200px; }
-        #cnt3 .left .checklist h5 {
+        #cnt3 .on_left .checklist h5 {
           padding-left: 100px;
           padding-top: 25px;
           font-size: 22px; }
-        #cnt3 .left .checklist a {
+        #cnt3 .on_left .checklist a {
           display: block;
           width: 100%;
           height: 220px; }
-          #cnt3 .left .checklist a img {
+          #cnt3 .on_left .checklist a img {
             width: 30px;
             height: 25px;
             margin-left: 230px;
             margin-top: 20px; }
-        #cnt3 .left .checklist::after {
+        #cnt3 .on_left .checklist::after {
           width: 530px;
           bottom: 80px;
           left: 15%; }
-      #cnt3 .left .notice {
+      #cnt3 .on_left .notice {
         width: 100%;
         height: 350px;
         margin-top: 100px; }
-        #cnt3 .left .notice a {
+        #cnt3 .on_left .notice a {
           position: relative;
           display: block;
           margin-top: 30px;
           margin-left: 20px; }
-          #cnt3 .left .notice a h5 {
+          #cnt3 .on_left .notice a h5 {
             font-size: 28px;
             padding-left: 115px;
             padding-bottom: 10px; }
-          #cnt3 .left .notice a img {
+          #cnt3 .on_left .notice a img {
             width: 30px;
             height: 25px;
             margin-left: 390px;
             margin-top: 3px; }
-          #cnt3 .left .notice a::after {
+          #cnt3 .on_left .notice a::after {
             margin: 0;
             width: 530px;
             bottom: -25px;
             left: 100px;
             position: absolute; }
-        #cnt3 .left .notice ul {
+        #cnt3 .on_left .notice ul {
           padding: 40px 0 0 115px; }
-          #cnt3 .left .notice ul li {
+          #cnt3 .on_left .notice ul li {
             font-size: 18px;
             white-space: nowrap; }
-            #cnt3 .left .notice ul li + li {
+            #cnt3 .on_left .notice ul li + li {
               margin-top: 22px; }
     #cnt3 .magazine {
       display: block;
@@ -983,16 +985,18 @@
           margin-top: 18px;
           margin-left: 18px; }
 
-  #cnt4 .pc_menu3 {
-    display: none; }
-  #cnt4 .m_menu3 {
-    display: block; }
-    #cnt4 .m_menu3 .swiper-wrapper {
-      height: 700px; }
-    #cnt4 .m_menu3 .swiper-slide strong {
-      font-size: 35px; }
-    #cnt4 .m_menu3 .swiper-slide ul li a {
-      font-size: 25px; }
+  #cnt4 {
+    margin-bottom: 0; }
+    #cnt4 .pc_menu3 {
+      display: none; }
+    #cnt4 .m_menu3 {
+      display: block; }
+      #cnt4 .m_menu3 .swiper-wrapper {
+        height: 700px; }
+      #cnt4 .m_menu3 .swiper-slide strong {
+        font-size: 35px; }
+      #cnt4 .m_menu3 .swiper-slide ul li a {
+        font-size: 25px; }
 
   #banner {
     display: none; } }
@@ -1063,58 +1067,58 @@
     margin-top: 30px; }
     #cnt3 h5 {
       font-size: 15px; }
-    #cnt3 .left {
+    #cnt3 .on_left {
       display: block;
       margin: 0; }
-      #cnt3 .left .checklist {
+      #cnt3 .on_left .checklist {
         margin-top: 20px; }
-        #cnt3 .left .checklist h5 {
+        #cnt3 .on_left .checklist h5 {
           padding-left: 50px;
           padding-top: 13px;
           font-size: 16px; }
-        #cnt3 .left .checklist a {
+        #cnt3 .on_left .checklist a {
           display: block;
           width: 100%;
           height: 100px;
           font-weight: 400; }
-          #cnt3 .left .checklist a img {
+          #cnt3 .on_left .checklist a img {
             width: 20px;
             height: 25px;
             margin-left: 45px;
             margin-top: 8px; }
-        #cnt3 .left .checklist::after {
+        #cnt3 .on_left .checklist::after {
           width: 260px;
           bottom: 135px;
           left: calc(50% - 130px); }
-      #cnt3 .left .notice {
+      #cnt3 .on_left .notice {
         width: 100%;
         height: 200px;
         padding: 25px 30px 0 30px;
         margin-top: -50px; }
-        #cnt3 .left .notice a {
+        #cnt3 .on_left .notice a {
           position: relative;
           margin: 0; }
-          #cnt3 .left .notice a h5 {
+          #cnt3 .on_left .notice a h5 {
             font-size: 17px;
             padding-left: 30px;
             padding-top: 10px; }
-          #cnt3 .left .notice a img {
+          #cnt3 .on_left .notice a img {
             width: 20px;
             height: 25px;
             margin-left: 160px;
             margin-top: 5px; }
-          #cnt3 .left .notice a::after {
+          #cnt3 .on_left .notice a::after {
             margin: 0;
             width: 270px;
             bottom: -10px;
             left: 13px;
             position: absolute; }
-        #cnt3 .left .notice ul {
+        #cnt3 .on_left .notice ul {
           padding: 35px 0 0 15px; }
-          #cnt3 .left .notice ul li {
+          #cnt3 .on_left .notice ul li {
             font-size: 10px;
             white-space: nowrap; }
-            #cnt3 .left .notice ul li + li {
+            #cnt3 .on_left .notice ul li + li {
               margin-top: 22px; }
     #cnt3 .magazine {
       display: block;

@@ -96,15 +96,16 @@ header, nav, section, aside, footer {
   position: absolute;
   top: 0;
   left: -9999px;
-  z-index: 1000; }
+  z-index: 10001; }
   #skip a:focus {
     left: 0;
     width: 100%;
-    background: #000000;
+    background: #821E1E;
     text-align: center;
     height: 50px;
     line-height: 50px;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #ffffff; }
 
 body {
   font-family: NanumSquare, scDream;

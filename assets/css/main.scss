@@ -2,6 +2,7 @@
 @charset "utf-8";
 @import "_var", "_mixin";
 
+
 //wrap
 #cnt_wrap>section{background: #fff;}
 
@@ -120,7 +121,7 @@
 #cnt3{ 
     // display: none;
     margin-top: 5.2083vw; background: rgba(244, 235, 220, 0.1); position: relative;
-    .left{ margin: 0 0 5.2083vw 13.0208vw; display: inline-block;
+    .on_left{ margin: 0 0 5.2083vw 13.0208vw; display: inline-block;
         h5{display: inline-block;}
 
     .checklist{ padding-top: 60px; font-weight: 400; position: relative; 
@@ -147,7 +148,7 @@
     }
     }
     
-    .left{ margin: 0 0 5.2083vw 13.0208vw; display: inline-block; position: relative;
+    .on_left{ margin: 0 0 5.2083vw 13.0208vw; display: inline-block; position: relative;
         h5{display: inline-block;}
 
     .checklist{ padding-top: 3.1250vw; font-weight: 400; position: relative;  
@@ -211,20 +212,15 @@
 
 // #cnt4
 #cnt4{
-    margin-top: 10.4167vw;
+    margin-top: 10.4167vw; margin-bottom: 300px;
     //pc3
     .pc_menu3{ 
         // display: none;
         width: 100%; position: relative;
-        .red_line{ 
-            width: 100%; height: 100%;
-            &::before{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; 
-            }
-            &:hover::before{left: 11%; width: 40%; @include transition (all 0.5s);}
+        &::before{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; }
             &::after{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; }
-            &:hover::after{width: 40%; @include transition (all 0.5s);}
-        }
-    
+        
+
     .menu3{
         width: 100%; height: 46.8750vw; display: flex; justify-content: center;
         >li{display: inline-block; text-align: center; vertical-align:middle;  display:table-cell;}
@@ -245,7 +241,12 @@
     &:hover,&:focus{font-weight: 600;}
     }
     }
-}
+    }        
+    .pc_menu3.red_line{ 
+            width: 100%; height: 100%; display: block;       
+            &::before{left: 11%; width: 40%; @include transition (all 0.8s);}          
+            &::after{width: 40%; @include transition (all 0.7s);}
+        }
     //모바일 slider
     .m_menu3{ 
         display: none;
@@ -403,7 +404,7 @@
     }
     #cnt3{ 
         margin-top: 30px; overflow: hidden;
-        .left{
+        .on_left{
             display: block; margin: 0;
         .checklist{
            height: 200px;
@@ -452,7 +453,7 @@
                 }
         }
     }
-    #cnt4{
+    #cnt4{ margin-bottom: 0;
         .pc_menu3{display: none;}
         .m_menu3{display: block;
             .swiper-wrapper{height: 700px;}
@@ -503,7 +504,7 @@
     #cnt3{ 
         margin-top: 30px;
         h5{font-size: 15px;}
-        .left{
+        .on_left{
             display: block; margin: 0;
         .checklist{
             margin-top: 20px;
