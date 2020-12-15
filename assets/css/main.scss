@@ -212,7 +212,7 @@
 
 // #cnt4
 #cnt4{
-    margin-top: 10.4167vw; margin-bottom: 300px;
+    margin-top: 10.4167vw; margin-bottom: 9.375vw;
     //pc3
     .pc_menu3{ 
         // display: none;
@@ -554,6 +554,7 @@
     }
 }
     #cnt4{
+        margin-bottom: 0;
         .pc_menu3{display: none;}
         .m_menu3{display: block; 
             .swiper-wrapper{height: 500px;}
