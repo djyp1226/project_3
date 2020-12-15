@@ -1,11 +1,6 @@
-@charset "UTF-8";
-/* 
-기본pc => 태블릿 => 모바일
-*/
 #wrap {
   min-width: 20rem; }
 
-/* 320px => ? rem */
 .header {
   position: relative;
   width: 100%;
@@ -132,8 +127,8 @@
   width: 100%;
   height: 100%;
   background: #281E13;
-  border-top: 0.052083333vw solid #F4EBDC;
-  margin-top: 7.8125vw; }
+  border-top: 0.052083333vw solid #ffffff;
+  margin-top: 7.552083333vw; }
   #footer .ft_top {
     height: 5.208333333vw;
     border-bottom: 0.052083333vw solid #F4EBDC; }
@@ -225,7 +220,6 @@
           left: 4.166666667vw;
           width: 8.333333333vw;
           height: 0.416666667vw;
-          background: #fff;
           background: #fff; }
         #mHeader .on_top .btn_line .line.top {
           top: 25px;
@@ -272,8 +266,15 @@
         top: 20px;
         right: 4.166666667vw; }
     #mHeader .mgnb_wrap {
-      display: none;
-      height: 100%;
+      position: fixed;
+      top: 85px;
+      left: -100%;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 30px;
+      visibility: hidden;
+      overflow-y: auto;
+      background: #281E13;
       background: #281E13; }
       #mHeader .mgnb_wrap .m_calender {
         width: 100%;
@@ -286,7 +287,7 @@
         padding: 5.5556vw 0; }
         #mHeader .mgnb_wrap .m_calender a {
           display: block;
-          line-height: -1px; }
+          line-height: normal; }
       #mHeader .mgnb_wrap .dep1 {
         padding-top: 8.3333vw;
         padding-left: 9.722222222vw;
@@ -327,7 +328,7 @@
           font-size: 4.1667vw; }
         #mHeader .mgnb_wrap .dep2 > li + li {
           margin-top: 6.9444vw; }
-      #mHeader .mgnb_wrap::after {
+      #mHeader .mgnb_wrap::before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -484,8 +485,7 @@
         top: 3.611111111vw;
         right: 4.166666667vw; }
     #mHeader .mgnb_wrap {
-      display: none;
-      height: 100%;
+      top: 50px;
       background: #281E13; }
       #mHeader .mgnb_wrap .m_calender {
         width: 100%;
@@ -537,7 +537,7 @@
           z-index: 10; }
         #mHeader .mgnb_wrap .dep2 > li + li {
           margin-top: 6.9444vw; }
-      #mHeader .mgnb_wrap::after {
+      #mHeader .mgnb_wrap::before {
         content: "";
         position: absolute;
         bottom: 0;

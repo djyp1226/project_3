@@ -10,12 +10,13 @@
 #cnt1 #m_videoBg {
   display: none; }
 
+#tm_banner {
+  display: none; }
+
 #cnt2 #acco_box {
   overflow: hidden;
   margin-top: 1.5625vw;
   width: 100%; }
-  #cnt2 #acco_box button {
-    background: rgba(40, 30, 19, 0.8); }
 #cnt2 .pc#acco_box {
   height: 30.729166667vw; }
   #cnt2 .pc#acco_box h3 {
@@ -35,7 +36,8 @@
       font-size: 1.5625vw;
       color: #ffffff;
       width: 36.458333333vw;
-      height: 7.8125vw; }
+      height: 7.8125vw;
+      background: rgba(40, 30, 19, 0.8); }
       #cnt2 .pc#acco_box h3 button::after {
         content: "";
         background: #F4EBDC;
@@ -57,7 +59,7 @@
         outline: 0.052083333vw dashed #821E1E; }
   #cnt2 .pc#acco_box .accopanel {
     height: 30.729166667vw;
-    width: 0.0vw;
+    width: 0;
     color: #ffffff;
     overflow: hidden;
     float: left; }
@@ -110,7 +112,9 @@
   height: 80%;
   width: 100%;
   color: #ffffff;
-  overflow: hidden; }
+  overflow: hidden;
+  background: none;
+  background: rgba(40, 30, 19, 0.8); }
   #cnt2 .mobile#acco_box h3 {
     position: relative;
     font-size: 15px; }
@@ -135,7 +139,7 @@
         left: 60px;
         position: absolute; }
   #cnt2 .mobile#acco_box h3.on button {
-    background: rgba(130, 30, 30, 0.6); }
+    background: rgba(130, 30, 30, 0.85); }
   #cnt2 .mobile#acco_box > div {
     padding: 38px 40px 0 40px;
     height: 300px;
@@ -165,38 +169,40 @@
         width: 10px;
         height: 10px;
         background-image: url("../images/common/arrow_right.svg"); }
-  #cnt2 .mobile#acco_box.bg1 {
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    background-size: cover !important;
-    background: url("../images/main/m/acco_1_gapcheon_m1.png") no-repeat; }
-    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      #cnt2 .mobile#acco_box.bg1 {
-        background: url("../images/main/m/2x/acco_1_gapcheon_m2.png") no-repeat; } }
-  #cnt2 .mobile#acco_box.bg2 {
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    background-size: cover !important;
-    background: url("../images/main/m/acco_2_manchon_t1.png") no-repeat; }
-    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      #cnt2 .mobile#acco_box.bg2 {
-        background: url("../images/main/m/2x/acco_2_manchon_m2.png") no-repeat; } }
-  #cnt2 .mobile#acco_box.bg3 {
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    background-size: cover !important;
-    background: url("../images/main/m/acco_3_gangil_t1.png") no-repeat; }
-    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      #cnt2 .mobile#acco_box.bg3 {
-        background: url("../images/main/m/2x/acco_3_gangi_m2.png") no-repeat; } }
-  #cnt2 .mobile#acco_box.bg4 {
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    background-size: cover !important;
-    background: url("../images/main/m/acco_4_pohang_m1.png") no-repeat; }
-    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      #cnt2 .mobile#acco_box.bg4 {
-        background: url("../images/main/m/2x/acco_4_pohang_m2.png") no-repeat; } }
+  #cnt2 .mobile#acco_box .accopanel {
+    width: 100%; }
+    #cnt2 .mobile#acco_box .accopanel.bg1 {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      background: url("../images/main/m/acco_1_gapcheon_m1.png") no-repeat; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        #cnt2 .mobile#acco_box .accopanel.bg1 {
+          background: url("../images/main/m/2x/acco_1_gapcheon_m2.png") no-repeat; } }
+    #cnt2 .mobile#acco_box .accopanel.bg2 {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      background: url("../images/main/m/acco_2_manchon_t1.png") no-repeat; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        #cnt2 .mobile#acco_box .accopanel.bg2 {
+          background: url("../images/main/m/2x/acco_2_manchon_m2.png") no-repeat; } }
+    #cnt2 .mobile#acco_box .accopanel.bg3 {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      background: url("../images/main/m/acco_3_gangil_t1.png") no-repeat; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        #cnt2 .mobile#acco_box .accopanel.bg3 {
+          background: url("../images/main/m/2x/acco_3_gangi_m2.png") no-repeat; } }
+    #cnt2 .mobile#acco_box .accopanel.bg4 {
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      background-size: cover !important;
+      background: url("../images/main/m/acco_4_pohang_m1.png") no-repeat; }
+      @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        #cnt2 .mobile#acco_box .accopanel.bg4 {
+          background: url("../images/main/m/2x/acco_4_pohang_m2.png") no-repeat; } }
 
 #cnt3 {
   margin-top: 5.2083vw;
@@ -349,12 +355,14 @@
         float: left;
         padding: 2.6042vw 3.1250vw;
         font-size: 0.8854vw; }
-      #cnt3 .left .notice li a {
-        display: block; }
-        #cnt3 .left .notice li a:hover, #cnt3 .left .notice li a:focus {
-          font-weight: 600; }
-      #cnt3 .left .notice li + li {
-        margin-top: 2.3438vw; }
+      #cnt3 .left .notice li {
+        white-space: nowrap; }
+        #cnt3 .left .notice li a {
+          display: block; }
+          #cnt3 .left .notice li a:hover, #cnt3 .left .notice li a:focus {
+            font-weight: 600; }
+        #cnt3 .left .notice li + li {
+          margin-top: 2.3438vw; }
   #cnt3 .magazine {
     width: 36.4583vw;
     height: 36.4583vw;
@@ -469,7 +477,6 @@
     width: 100%;
     position: relative; }
     #cnt4 .pc_menu3 .red_line {
-      display: block;
       width: 100%;
       height: 100%; }
       #cnt4 .pc_menu3 .red_line::before {
@@ -624,7 +631,7 @@
     #cnt4 .m_menu3 .swiper-pagination {
       position: absolute;
       bottom: 45px;
-      left: calc(50% - 37.5px); }
+      right: 0; }
       #cnt4 .m_menu3 .swiper-pagination .swiper-pagination-bullet {
         width: 15px;
         height: 35px;
@@ -697,129 +704,176 @@
       -o-transition: all 0.3s;
       transition: all 0.3s; }
 
-@media screen and (max-width: 1439px) {
-  #cnt1 .main_video {
-    height: 100vh;
-    overflow: hidden; }
-    #cnt1 .main_video * {
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      position: absolute;
-      top: 50%;
-      left: 50%; }
+@media screen and (max-width: 1439px) and (orientation: landscape) {
   #cnt1 #videoBg {
-    display: none; }
+    max-width: none;
+    width: auto;
+    height: 100%; }
+  #cnt1 #t_videoBg, #cnt1 #m_videoBg {
+    display: none; } }
+@media screen and (max-width: 1439px) and (orientation: portrait) {
   #cnt1 #t_videoBg {
     display: block;
     width: 100%; }
-  #cnt1 #m_videoBg {
-    display: none; }
+  #cnt1 #videoBg, #cnt1 #m_videoBg {
+    display: none; } }
+@media screen and (max-width: 1439px) {
+  #cnt1 {
+    position: relative; }
+    #cnt1 .main_video {
+      height: 100vh;
+      overflow: hidden; }
+      #cnt1 .main_video * {
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%; }
 
-  #cnt2 {
-    margin-top: 30px; }
-    #cnt2 #acco_box {
-      overflow: hidden;
-      margin-top: 1.5625vw;
+  #tm_banner {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 500;
+    color: #F4EBDC; }
+    #tm_banner::before {
+      content: "";
+      display: inline-block;
       width: 100%;
-      height: 100%; }
-      #cnt2 #acco_box button {
-        background: rgba(40, 30, 19, 0.8); }
-    #cnt2 .pc#acco_box {
-      height: 500px; }
-      #cnt2 .pc#acco_box h3 {
-        width: 9.114583333vw;
-        height: 500px;
+      height: 60px;
+      background: #281E13;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    #tm_banner a {
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      text-align: center; }
+      #tm_banner a strong {
+        display: inline-block;
+        font-size: 20px;
+        line-height: 60px; }
+        #tm_banner a strong + strong {
+          margin-left: 5px; }
+      #tm_banner a .f_w {
+        color: #ffffff; }
+      #tm_banner a:hover, #tm_banner a:focus {
+        background: #821E1E;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+
+  #cnt2 #acco_box {
+    overflow: hidden;
+    margin-top: 1.5625vw;
+    width: 100%;
+    height: 100%; }
+    #cnt2 #acco_box button {
+      background: rgba(40, 30, 19, 0.8); }
+  #cnt2 .pc#acco_box {
+    height: 500px; }
+    #cnt2 .pc#acco_box h3 {
+      width: 9.114583333vw;
+      height: 500px;
+      position: relative;
+      float: left; }
+      #cnt2 .pc#acco_box h3 button {
         position: relative;
-        float: left; }
-        #cnt2 .pc#acco_box h3 button {
-          position: relative;
-          top: 200px;
-          left: -210px;
-          -webkit-transform: rotate(90deg);
-          -moz-transform: rotate(90deg);
-          -o-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-          text-align: left;
-          padding-left: 80px;
-          font-size: 20px;
-          padding-top: 10px;
-          color: #ffffff;
-          width: 500px;
-          height: 7.8125vw; }
-          #cnt2 .pc#acco_box h3 button::after {
-            content: "";
-            background: #F4EBDC;
-            width: 0.520833333vw;
-            height: 5.208333333vw;
-            display: block;
-            bottom: 0;
-            right: 5.208333333vw;
-            position: absolute; }
-          #cnt2 .pc#acco_box h3 button:hover, #cnt2 .pc#acco_box h3 button:focus {
-            background: rgba(130, 30, 30, 0.6); }
-          #cnt2 .pc#acco_box h3 button:focus::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            outline: 0.052083333vw dashed #821E1E; }
-      #cnt2 .pc#acco_box .accopanel {
-        height: 500px;
-        width: 0.0vw;
+        top: 200px;
+        left: -210px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        text-align: left;
+        padding-left: 80px;
+        font-size: 20px;
+        padding-top: 10px;
         color: #ffffff;
-        overflow: hidden;
-        float: left; }
-        #cnt2 .pc#acco_box .accopanel div {
-          width: 50.520833333vw;
-          margin-left: 7.81250vw; }
-          #cnt2 .pc#acco_box .accopanel div p {
-            color: #F4EBDC;
-            font-size: 20px;
-            padding-top: 50px;
-            line-height: 30px; }
-          #cnt2 .pc#acco_box .accopanel div strong {
-            display: block;
-            padding-top: 20px;
-            font-size: 30px; }
-          #cnt2 .pc#acco_box .accopanel div a {
-            display: block;
-            border: 0.052083333vw solid #fff;
-            width: 130px;
-            height: 40px;
-            line-height: 40px;
-            padding-left: 20px;
-            margin-top: 30px;
-            position: relative;
-            font-size: 16px; }
-            #cnt2 .pc#acco_box .accopanel div a:hover, #cnt2 .pc#acco_box .accopanel div a:focus {
-              background-color: #821E1E;
-              border: 0.052083333vw solid #821E1E;
-              -webkit-transition: all 0.3s;
-              -moz-transition: all 0.3s;
-              -o-transition: all 0.3s;
-              transition: all 0.3s; }
-          #cnt2 .pc#acco_box .accopanel div span {
-            position: absolute;
-            display: block;
-            top: calc(50% - 7.5px);
-            right: 18px;
-            width: 15px;
-            height: 15px;
-            background-image: url("../images/common/arrow_right.svg"); }
-      #cnt2 .pc#acco_box.bg1 {
-        background-image: url("../images/main/t/acco_1_gapcheon_t1.png"); }
-      #cnt2 .pc#acco_box.bg2 {
-        background-image: url("../images/main/t/acco_2_manchon_t1.png"); }
-      #cnt2 .pc#acco_box.bg3 {
-        background-image: url("../images/main/t/acco_3_gangil_t1.png"); }
-      #cnt2 .pc#acco_box.bg4 {
-        background-image: url("../images/main/t/acco_4_pohang_t1.png"); }
+        width: 500px;
+        height: 7.8125vw; }
+        #cnt2 .pc#acco_box h3 button::after {
+          content: "";
+          background: #F4EBDC;
+          width: 0.520833333vw;
+          height: 5.208333333vw;
+          display: block;
+          bottom: 0;
+          right: 5.208333333vw;
+          position: absolute; }
+        #cnt2 .pc#acco_box h3 button:hover, #cnt2 .pc#acco_box h3 button:focus {
+          background: rgba(130, 30, 30, 0.6); }
+        #cnt2 .pc#acco_box h3 button:focus::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          outline: 0.052083333vw dashed #821E1E; }
+    #cnt2 .pc#acco_box .accopanel {
+      height: 500px;
+      width: 0.0vw;
+      color: #ffffff;
+      overflow: hidden;
+      float: left; }
+      #cnt2 .pc#acco_box .accopanel div {
+        width: 50.520833333vw;
+        margin-left: 7.81250vw; }
+        #cnt2 .pc#acco_box .accopanel div p {
+          color: #F4EBDC;
+          font-size: 20px;
+          padding-top: 50px;
+          line-height: 30px; }
+        #cnt2 .pc#acco_box .accopanel div strong {
+          display: block;
+          padding-top: 20px;
+          font-size: 30px; }
+        #cnt2 .pc#acco_box .accopanel div a {
+          display: block;
+          border: 0.052083333vw solid #fff;
+          width: 130px;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 20px;
+          margin-top: 30px;
+          position: relative;
+          font-size: 16px; }
+          #cnt2 .pc#acco_box .accopanel div a:hover, #cnt2 .pc#acco_box .accopanel div a:focus {
+            background-color: #821E1E;
+            border: 0.052083333vw solid #821E1E;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s; }
+        #cnt2 .pc#acco_box .accopanel div span {
+          position: absolute;
+          display: block;
+          top: calc(50% - 7.5px);
+          right: 18px;
+          width: 15px;
+          height: 15px;
+          background-image: url("../images/common/arrow_right.svg"); }
+    #cnt2 .pc#acco_box.bg1 {
+      background-image: url("../images/main/t/acco_1_gapcheon_t1.png"); }
+    #cnt2 .pc#acco_box.bg2 {
+      background-image: url("../images/main/t/acco_2_manchon_t1.png"); }
+    #cnt2 .pc#acco_box.bg3 {
+      background-image: url("../images/main/t/acco_3_gangil_t1.png"); }
+    #cnt2 .pc#acco_box.bg4 {
+      background-image: url("../images/main/t/acco_4_pohang_t1.png"); }
 
   #cnt3 {
     margin-top: 30px;
@@ -828,8 +882,7 @@
       display: block;
       margin: 0; }
       #cnt3 .left .checklist {
-        margin-top: 50px;
-        height: 220px; }
+        height: 200px; }
         #cnt3 .left .checklist h5 {
           padding-left: 100px;
           padding-top: 25px;
@@ -845,7 +898,7 @@
             margin-top: 20px; }
         #cnt3 .left .checklist::after {
           width: 530px;
-          bottom: 95px;
+          bottom: 80px;
           left: 15%; }
       #cnt3 .left .notice {
         width: 100%;
@@ -874,7 +927,8 @@
         #cnt3 .left .notice ul {
           padding: 40px 0 0 115px; }
           #cnt3 .left .notice ul li {
-            font-size: 18px; }
+            font-size: 18px;
+            white-space: nowrap; }
             #cnt3 .left .notice ul li + li {
               margin-top: 22px; }
     #cnt3 .magazine {
@@ -942,6 +996,20 @@
 
   #banner {
     display: none; } }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  #cnt1 #videoBg {
+    display: block;
+    max-width: none;
+    width: 100%;
+    height: auto; }
+  #cnt1 #t_videoBg, #cnt1 #m_videoBg {
+    display: none; } }
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  #cnt1 #m_videoBg {
+    display: block;
+    width: 100%; }
+  #cnt1 #videoBg, #cnt1 #t_videoBg {
+    display: none; } }
 @media screen and (max-width: 767px) {
   #cnt_wrap {
     position: relative; }
@@ -949,13 +1017,47 @@
   #cnt1 .main_video {
     height: 100vh;
     overflow: hidden; }
-    #cnt1 .main_video #videoBg {
-      display: none; }
-    #cnt1 .main_video #t_videoBg {
-      display: none; }
-    #cnt1 .main_video #m_videoBg {
-      display: block;
-      width: 100%; }
+
+  #tm_banner {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 500;
+    color: #F4EBDC; }
+    #tm_banner::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 40px;
+      background: #281E13;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    #tm_banner a {
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      text-align: center; }
+      #tm_banner a strong {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 40px; }
+        #tm_banner a strong + strong {
+          margin-left: 5px; }
+      #tm_banner a .f_w {
+        color: #ffffff; }
+      #tm_banner a:hover, #tm_banner a:focus {
+        background: #821E1E;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
 
   #cnt3 {
     margin-top: 30px; }
@@ -973,7 +1075,8 @@
         #cnt3 .left .checklist a {
           display: block;
           width: 100%;
-          height: 100px; }
+          height: 100px;
+          font-weight: 400; }
           #cnt3 .left .checklist a img {
             width: 20px;
             height: 25px;
@@ -981,7 +1084,7 @@
             margin-top: 8px; }
         #cnt3 .left .checklist::after {
           width: 260px;
-          bottom: 155px;
+          bottom: 135px;
           left: calc(50% - 130px); }
       #cnt3 .left .notice {
         width: 100%;
@@ -1009,7 +1112,8 @@
         #cnt3 .left .notice ul {
           padding: 35px 0 0 15px; }
           #cnt3 .left .notice ul li {
-            font-size: 10px; }
+            font-size: 10px;
+            white-space: nowrap; }
             #cnt3 .left .notice ul li + li {
               margin-top: 22px; }
     #cnt3 .magazine {
@@ -1045,7 +1149,7 @@
           margin-left: 20px; }
     #cnt3 .hillstory {
       height: 200px;
-      margin-top: 50px; }
+      margin-top: 10px; }
       #cnt3 .hillstory .storybox a strong {
         font-size: 18px;
         letter-spacing: 5px;

@@ -14,19 +14,21 @@
     #m_videoBg{display: none;}
 }
 
+#tm_banner {display: none;}
+
 // #cnt2
 #cnt2{ 
     // display: none;
     #acco_box{overflow: hidden; margin-top: 1.5625vw; width: 100%;
-        button{background: rgba(40, 30, 19, 0.8);}
     } 
+
     //.pc.hillAccodion
     .pc#acco_box{
      height: 30.729166667vw;
     h3{width: 9.114583333vw; height: 30.729166667vw;position: relative; float: left;
         button{
             position: relative; top: 11.458333333vw;left: -13.541666667vw; @include transform (rotate(90deg));
-            font-size: 1.5625vw; color: #ffffff; width: 36.458333333vw; height: 7.8125vw;
+            font-size: 1.5625vw; color: #ffffff; width: 36.458333333vw; height: 7.8125vw; background: rgba(40, 30, 19, 0.8);
             &::after{content:""; background:$beige; width: 0.520833333vw; height: 5.208333333vw; display: block; bottom: 0;right: 5.208333333vw; position: absolute;}
             &:hover,&:focus{background: rgba(130, 30, 30, 0.6);}
             &:focus::before{content: "";position: absolute; top: 0;left: 0;width: 100%;height: 100%; outline: 0.052083333vw dashed $wine;}
@@ -34,7 +36,7 @@
     }
 
     .accopanel{
-        height: 30.729166667vw;width: 0.0vw; color: #ffffff;overflow: hidden; float: left;
+        height: 30.729166667vw;width: 0; color: #ffffff;overflow: hidden; float: left;
         div{width: 50.520833333vw; margin-left: 7.81250vw;
         p{color: $beige; font-size: 1.302083333vw; padding-top: 3.12500vw; line-height: 1.71875vw;}
         strong{display: block;  font-size: 1.822916667vw; padding-top: 1.5625vw;}
@@ -51,7 +53,7 @@
     }
 
     .mobile#acco_box{
-        height: 80%; width: 100%; color: #ffffff; overflow: hidden;
+        height: 80%; width: 100%; color: #ffffff; overflow: hidden; background: none; background: rgba(40, 30, 19, 0.8);
         h3{       
             position: relative;font-size: 15px;
             button{ 
@@ -62,7 +64,7 @@
             }
         }
         h3.on{
-            button{background: rgba(130, 30, 30, 0.6);}}
+            button{background: rgba(130, 30, 30, 0.85);}}
         >div{padding: 38px 40px 0 40px; height: 300px;display: none;
             p{color: $beige;font-size: 13px;}
             strong{display: block; font-size: 20px; margin-top: 10px;}
@@ -72,6 +74,8 @@
 
             }
         }
+        .accopanel{
+            width: 100%;
         &.bg1{
             @include bgsize(cover);
             background: url("../images/main/m/acco_1_gapcheon_m1.png") no-repeat ;
@@ -108,6 +112,7 @@
             screen and (min-resolution: 2dppx){
             background: url("../images/main/m/2x/acco_4_pohang_m2.png") no-repeat;
             }}
+        }
     }
 }
 
@@ -161,7 +166,7 @@
             &::after{content: ""; display: block; width: 26.0417vw; height: 0.1042vw; background-color: $brown; margin-left: 2.6042vw; margin-top: 0.7813vw;}
         }
         ul{float: left; padding: 2.6042vw 3.1250vw;font-size: 0.8854vw;}
-        li{
+        li{ white-space: nowrap;
             a{display: block;
                 &:hover,&:focus{font-weight: 600;}}
             +li{margin-top: 2.3438vw;}
@@ -212,7 +217,7 @@
         // display: none;
         width: 100%; position: relative;
         .red_line{ 
-            display: block; width: 100%; height: 100%;
+            width: 100%; height: 100%;
             &::before{content: ""; display: inline-block; position: absolute; height: 0.0521vw; background: $wine; top: 16.6667vw; left: 50%; width: 0%; 
             }
             &:hover::before{left: 11%; width: 40%; @include transition (all 0.5s);}
@@ -277,7 +282,7 @@
             }
         }
         .swiper-pagination{
-            position: absolute; bottom: 45px;left: calc(50% - 37.5px);
+            position: absolute; bottom: 45px;right: 0;
             .swiper-pagination-bullet{
                 width: 15px; height: 35px; background: rgba(149, 110, 75, 0.6);
             +.swiper-pagination-bullet{margin-left: 10px;}
@@ -308,21 +313,60 @@
 }
 
 // 태블릿
+@media screen and (max-width: 1439px) and (orientation: landscape) {
+    #cnt1{
+        #videoBg{max-width: none;width: auto;height: 100%;}
+        #t_videoBg, #m_videoBg{display: none;}
+    }
+}
+@media screen and (max-width: 1439px) and (orientation: portrait) {
+    #cnt1{
+        #t_videoBg{display: block;width: 100%;}
+        #videoBg, #m_videoBg{display: none;}
+    }
+}
 
 @media screen and (max-width: 1439px) {
     #cnt1{
+        position: relative;
         .main_video{
             height: 100vh;overflow: hidden;
             *{
                 @include transform(translate(-50%, -50%));
                 position: absolute;top: 50%;left: 50%;}
             }
-        #videoBg{display: none;}
-        #t_videoBg{display: block; width: 100%;}
-        #m_videoBg{display: none;}
+    }
+
+    //width: 100%; height: 300px; 
+    // color: $beige;
+    // &::before{  width: 100%; height: 130px;background: $dark_brown;  bottom: 0;left: 0;}
+    // a{  padding: 0 180px;
+    //      bottom :0px; left: 0; width: 100%;height: 130px;
+        
+    //     strong{width: 1040px; font-size: 40px; line-height: 130px; padding-left: 90px;
+    //         +strong{padding-left:30px;}
+    //     }
+    //     .f_w{}
+    //     span{ top: calc(50% - 35px);right: 320px;  font-size: 50px; width: 70px;height: 70px; border: 3px solid #fff;  line-height: 65px;}
+    //     &:hover,&:focus{background: $wine; @include transition(all 0.3s);}
+
+
+    #tm_banner {display: block; position: absolute; bottom: 0; left: 0;
+        width: 100%; height: 60px; z-index: 500;
+        color: $beige;
+        &::before{content: ""; display: inline-block; width: 100%; height: 60px;background: $dark_brown; position: absolute; bottom: 0;left: 0;}
+        a{ display: inline-block;
+            position: absolute; bottom :0px; left: 0; width: 100%;height: 60px;
+            text-align: center;
+            strong{display: inline-block; font-size: 20px; line-height: 60px;
+                +strong{margin-left: 5px;}
+            }
+            .f_w{color: #ffffff;}
+            &:hover,&:focus{background: $wine; @include transition(all 0.3s);}
+        }
     }
     #cnt2{ 
-        margin-top: 30px;
+    
         #acco_box{overflow: hidden; margin-top: 1.5625vw; width: 100%;height: 100%;
             button{background: rgba(40, 30, 19, 0.8);}
         } 
@@ -362,12 +406,12 @@
         .left{
             display: block; margin: 0;
         .checklist{
-            margin-top: 50px; height: 220px;
+           height: 200px;
             h5{padding-left: 100px; padding-top: 25px;font-size: 22px;}
             a{display: block; width:100%; height: 220px; 
                 img{width: 30px;height: 25px; margin-left: 230px; margin-top: 20px;}
             }
-            &::after{width: 530px; bottom: 95px; left:15%;}
+            &::after{width: 530px; bottom: 80px; left:15%;} 
         }
 
         .notice{
@@ -378,7 +422,7 @@
                 &::after{ margin: 0; width: 530px; bottom: -25px; left:100px; position: absolute;}
             }
             ul{ padding:40px 0 0 115px;
-                li{font-size: 18px;
+                li{font-size: 18px; white-space: nowrap;
                 +li{margin-top: 22px;}
                 }
             }
@@ -422,18 +466,40 @@
 }
 
 // 모바일
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    #cnt1{
+        #videoBg{display: block;max-width: none;width: 100%;height: auto;}
+        #t_videoBg, #m_videoBg{display: none;}
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    #cnt1{
+        #m_videoBg{display: block;width: 100%;}
+        #videoBg, #t_videoBg{display: none;}
+    }
+}
 
 @media screen and (max-width: 767px) {
     #cnt_wrap{position: relative;}
     #cnt1{   
         .main_video{
             height: 100vh; overflow: hidden;
-        #videoBg{display: none;}
-        #t_videoBg{display: none;}
-        #m_videoBg{display: block; width: 100%;}
     } 
 }
-    #cnt2{ }
+    #tm_banner {display: block; position: absolute; bottom: 0; left: 0;
+        width: 100%; height: 40px; z-index: 500;
+        color: $beige;
+        &::before{content: ""; display: inline-block; width: 100%; height: 40px;background: $dark_brown; position: absolute; bottom: 0;left: 0;}
+        a{ display: inline-block;
+            position: absolute; bottom :0px; left: 0; width: 100%;height: 40px;
+            text-align: center;
+            strong{display: inline-block; font-size: 14px; line-height: 40px;
+                +strong{margin-left: 5px;}
+            }
+            .f_w{color: #ffffff;}
+            &:hover,&:focus{background: $wine; @include transition(all 0.3s);}
+        }
+    }
     #cnt3{ 
         margin-top: 30px;
         h5{font-size: 15px;}
@@ -442,10 +508,10 @@
         .checklist{
             margin-top: 20px;
             h5{padding-left: 50px; padding-top: 13px; font-size: 16px;}
-            a{display: block; width:100%; height: 100px;
+            a{display: block; width:100%; height: 100px; font-weight: 400;
                 img{width: 20px;height: 25px; margin-left: 45px; margin-top: 8px;}
             }
-            &::after{width: 260px; bottom: 155px; left:calc(50% - 130px);}
+            &::after{width: 260px; bottom: 135px; left:calc(50% - 130px);}
         }
 
         .notice{
@@ -456,7 +522,7 @@
                 &::after{ margin: 0; width: 270px; bottom: -10px; left:13px; position: absolute;}
             }
             ul{ padding: 35px 0 0 15px;
-                li{font-size: 10px;
+                li{font-size: 10px; white-space: nowrap;
                 +li{margin-top: 22px;}
                 }
             }
@@ -475,7 +541,7 @@
         }
         }
         .hillstory{
-            height: 200px; margin-top: 50px;
+            height: 200px; margin-top: 10px;
             .storybox{
                 a{
                 strong{font-size: 18px; letter-spacing: 5px; line-height: 50px; padding-top: 35px;}
