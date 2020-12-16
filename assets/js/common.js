@@ -77,6 +77,7 @@ $(document).ready(function () {
         $(this).css({
           visibility: 'hidden'
         }).find('.dep1 > li.on').removeClass('on').children('.dep2').hide();
+        
       });
       $(this).removeClass('on').children('.blind-b').text('메뉴 열기');
     } else { //닫겨진 경우라면
