@@ -207,7 +207,8 @@
 #cnt3 {
   margin-top: 5.2083vw;
   background: rgba(244, 235, 220, 0.1);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   #cnt3 .on_left {
     margin: 0 0 5.2083vw 13.0208vw;
     display: inline-block; }
@@ -712,7 +713,21 @@
     width: auto;
     height: 100%; }
   #cnt1 #t_videoBg, #cnt1 #m_videoBg {
-    display: none; } }
+    display: none; }
+
+  #cnt3 .on_left {
+    overflow: hidden; }
+    #cnt3 .on_left .checklist a {
+      margin-top: -15px;
+      padding-left: 150px; }
+    #cnt3 .on_left .notice {
+      padding-left: 120px; }
+      #cnt3 .on_left .notice a img {
+        position: absolute;
+        top: 0;
+        left: 195px; }
+  #cnt3 .magazine {
+    margin-left: 135px; } }
 @media screen and (max-width: 1439px) and (orientation: portrait) {
   #cnt1 #t_videoBg {
     display: block;
@@ -900,8 +915,8 @@
             margin-top: 20px; }
         #cnt3 .on_left .checklist::after {
           width: 530px;
-          bottom: 80px;
-          left: 15%; }
+          bottom: 40%;
+          left: calc(50% - 265px); }
       #cnt3 .on_left .notice {
         width: 100%;
         height: 350px;
@@ -1009,7 +1024,20 @@
     width: 100%;
     height: auto; }
   #cnt1 #t_videoBg, #cnt1 #m_videoBg {
-    display: none; } }
+    display: none; }
+
+  #cnt3 .on_left {
+    overflow: hidden; }
+    #cnt3 .on_left .checklist a {
+      padding-left: 150px; }
+    #cnt3 .on_left .notice {
+      padding-left: 140px; }
+      #cnt3 .on_left .notice a img {
+        position: absolute;
+        top: 0;
+        left: 90px; }
+      #cnt3 .on_left .notice a::after {
+        margin-left: -65px; } }
 @media screen and (max-width: 767px) and (orientation: portrait) {
   #cnt1 #m_videoBg {
     display: block;
@@ -1095,28 +1123,27 @@
       #cnt3 .on_left .notice {
         width: 100%;
         height: 200px;
-        padding: 25px 30px 0 30px;
-        margin-top: -50px; }
+        margin-top: -50px;
+        padding-top: 25px; }
         #cnt3 .on_left .notice a {
           position: relative;
           margin: 0; }
           #cnt3 .on_left .notice a h5 {
             font-size: 17px;
-            padding-left: 30px;
-            padding-top: 10px; }
+            padding-top: 10px;
+            padding-left: 65px; }
           #cnt3 .on_left .notice a img {
             width: 20px;
             height: 25px;
-            margin-left: 160px;
+            margin-left: 195px;
             margin-top: 5px; }
           #cnt3 .on_left .notice a::after {
-            margin: 0;
             width: 270px;
             bottom: -10px;
-            left: 13px;
+            left: calc(50% - 135px);
             position: absolute; }
         #cnt3 .on_left .notice ul {
-          padding: 35px 0 0 15px; }
+          padding: 35px 0 0 48px; }
           #cnt3 .on_left .notice ul li {
             font-size: 10px;
             white-space: nowrap; }
